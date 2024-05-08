@@ -44,26 +44,26 @@
         <div class="card">
             <img class="card_img" src="./img/pro_language.png">
             <p class="card_title"> Skills </p>
-            <input class="card_button" type="button"
-                onclick="redirectToAnotherPage(pro_language)">
+            <input class="card_button" type="button" value="click"
+                onclick="redirectToAnotherPage('skills')">
         </div>
         <div class="card">
-            <img class="card_img" src="./img/conding.png">
+            <img class="card_img" src="./img/coding.png">
             <p class="card_title"> Practical Experience </p>
-            <input class="card_button" type="button"
-                onclick="redirectToAnotherPage(coding)">
+            <input class="card_button" type="button" value="click"
+                onclick="redirectToAnotherPage('experience')">
         </div>
         <div class="card">
             <img class="card_img" src="./img/contact.png">
             <p class="card_title"> Contact </p>
-            <input class="card_button" type="button"
-                onclick="redirectToAnotherPage(contact)">
+            <input class="card_button" type="button" value="click"
+                onclick="redirectToAnotherPage('contact')">
         </div>
         </div>
         <script>
             function redirectToAnotherPage(pageName) {
 
-            var nextPageUrl = `${pageName}.html`;
+            var nextPageUrl = `./${pageName}.html`;
             
             // 현재 창을 새로운 페이지로 이동합니다.
             window.location.href = nextPageUrl;
